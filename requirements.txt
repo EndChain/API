@@ -1,2 +1,9 @@
 Flask
 gunicorn
+pyqrcode
+barcode
+imshow
+numpy
+Image
+flask_restful
+flask
