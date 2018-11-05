@@ -1,8 +1,6 @@
 Flask
 gunicorn
-Levenshtein
 pyqrcode
-barcode
 imshow
 numpy
 Image
