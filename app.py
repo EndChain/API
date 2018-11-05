@@ -49,25 +49,7 @@ def generate( qrAddress, barCode ):
     im.save('out.png')
     return True
 
-users = [
-    {
-        "name": "Nicholas",
-        "age": 42,
-        "occupation": "Network Engineer"
-    },
-    {
-        "name": "Elvin",
-        "age": 32,
-        "occupation": "Doctor"
-    },
-    {
-        "name": "Jass",
-        "age": 22,
-        "occupation": "Web Developer"
-    }
-]
-
-class User(Resource):
+class Generate(Resource):
     def get(self, barcode, url):
         if(barcode and url):
             generate(url, barcode)
@@ -75,7 +57,7 @@ class User(Resource):
         return "Forbidden", 404
 
 
-api.add_resource(User, "/barcode/<string:barcode>/url/<string:url>")
+api.add_resource(Generate, "/barcode/<string:barcode>/url/<string:url>")
 
 if __name__ == '__main__':
     app.run()
