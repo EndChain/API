@@ -7,7 +7,7 @@ from flask import send_file
 
 import pyqrcode
 #import barcode
-from matplotlib.pyplot import imshow
+#from matplotlib.pyplot import imshow
 import numpy as np
 from PIL import Image
 
@@ -43,7 +43,7 @@ def generate( qrAddress, barCode ):
     region = logo
     region = region.resize((box[2] - box[0], box[3] - box[1]))
     im.paste(region,box)
-    im.show()
+    #im.show()
 
     #Save the combination
     im.save('out.png')
