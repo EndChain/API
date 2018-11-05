@@ -7,5 +7,6 @@ numpy
 Image
 flask
 pypng
+setuptools
 pathlib
 python-barcode
