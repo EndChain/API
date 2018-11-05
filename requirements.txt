@@ -9,4 +9,3 @@ flask
 pypng
 setuptools
 pathlib
-python-barcode
