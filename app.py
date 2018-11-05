@@ -77,6 +77,7 @@ class User(Resource):
 
 api.add_resource(User, "/barcode/<string:barcode>/url/<string:url>")
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run()
 
 #http://127.0.0.1:5000/barcode/5901234123457/url/kdsjflsdkjfsd
