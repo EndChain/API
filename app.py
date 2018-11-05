@@ -6,7 +6,7 @@ from flask_restful import Api, Resource, reqparse
 from flask import send_file
 
 import pyqrcode
-import barcode
+#import barcode
 from matplotlib.pyplot import imshow
 import numpy as np
 from PIL import Image
