@@ -50,7 +50,7 @@ def generate( qrAddress, barCode ):
 
 class Generate(Resource):
     def get(self, barcode, url):
-        if(barcode and url and len(url)==13):
+        if(barcode and url and len(barcode)==13):
             generate(url, barcode)
             return send_file('out.png', mimetype='image/png')
         return "Forbidden", 404
