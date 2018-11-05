@@ -74,4 +74,5 @@ class User(Resource):
 
 api.add_resource(User, "/user/<string:name>")
 
-app.run()
+if __name__ == '__main__':
+    app.run()
