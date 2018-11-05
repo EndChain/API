@@ -6,4 +6,4 @@ imshow
 numpy
 Image
 flask
-png
+pypng
